@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap');
+
 .pokemons {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
 }
 
 .normal {
@@ -114,24 +116,34 @@ background-color: #a6a877;
 .pagination {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
 }
 
 .pagination button {
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    font-size: 20px;
     color: #ffff;
-    background-color:#6c79db;
-    border: none;
+    background-color:#687aff;   
+    border: 2px solid #ffff;  
     border-radius: 1rem;
-    padding: .25rem .5rem;
+    padding: 11px 22px;
 }
 
+button:hover {
+    transition: all 0.9s;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: #2461f0;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(5px 5px 5px #ffffff);
+}
+
+.Text {
+    color: #2461f0;
+}
 
 @media screen and (min-width: 380px) {
     .pokemons {
